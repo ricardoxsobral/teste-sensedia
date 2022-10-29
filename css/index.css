@@ -3,6 +3,9 @@
 *{
     font-family: 'Ubuntu', sans-serif;
 }
+span{
+    color: #ED0059;
+}
 
 /*NAVBAR*/
 .navbar{
@@ -50,12 +53,102 @@
 }
 
 /*CAROUSEL*/
-.carousel-item{
-    display: flex !important;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 30px;
+.carousel-inner{
+    text-align: center;
+    padding: 30px;
 }
 .carousel-item img{
     border-radius: 22px;
+    
 }
+/*CALL*/
+.call{
+    background-color: #EDEDED;
+    padding: 30px;
+}
+.call .call-content .call-title{
+    color: #313647;
+    font-size: 20px;
+    text-align: center;
+}
+.call .call-content .call-title h3::after{
+    content: '<recompensas/> !';
+    color: #ED0059;
+}
+.call .call-content .call-text {
+    margin-top: 20px;
+}
+.call .call-content .call-text .call-text-item{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+.call .call-content .call-text .call-text-item img{
+    width: 43px;
+    margin-right: 20px;
+}
+
+/*CALL*/
+.vantagens{
+    margin-top: 30px;
+}
+.vantagens .vantagens-content  .vantagens-title{
+    color: #313647;
+    font-size: 20px;
+    text-align: center;
+}
+.vantagens .vantagens-content .vantagens-content-text{
+    width: 200px;
+    height: 200px;
+    background-color: #170085;
+    transform: rotate(45deg);
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 75px;
+    margin-top: 50px;
+}
+.vantagens .vantagens-content .vantagens-content-text .vantagens-text{
+    transform: rotate(-45deg);
+    color: white;
+}
+.vantagens .vantagens-content .vantagens-content-text .vantagens-text p{
+    font-size: 15px;
+    padding: 5px;
+}
+
+/*FOOTER*/
+.footer{
+    background: #313647;
+    margin-top: 63px;
+}
+.footer .footer-content {
+    text-align: center;
+    padding-top: 30px;
+}
+.footer .footer-content .footer-top {
+    color: white;
+}
+.footer .footer-content .footer-top img{
+    width: 100px;
+}
+.footer .footer-content .footer-text .footer-item{
+    padding: 20px;
+}
+.footer .footer-content .footer-text .footer-item p{
+    color: #BCBCBC;
+}
+.footer .footer-content .footer-text .footer-item h3{
+    color: #FFFFFF;
+}
+.footer .footer-content .footer-text .footer-item .img-medias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.footer .footer-content .footer-text .footer-item .img-medias img{
+    width: 37px;
+}
+
