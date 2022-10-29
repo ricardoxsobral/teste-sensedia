@@ -1,0 +1,18 @@
+/*NAVBAR*/
+.navbar{
+    background: #e0005c;
+}
+.navbar-brand img{
+    width: 100%;
+}
+.navbar .navbar-toggler{
+    border: none ;
+}
+.navbar .navbar-toggler span{
+    background-image: url('../assets/icons8-cardápio-30.png');
+}
+
+/*HERO*/
+.hero{
+    background-image: linear-gradient(to bottom, #e0005c, #1d0084);
+}
