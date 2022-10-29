@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
 /*NAVBAR*/
 .navbar{
     background: #e0005c;
 }
 .navbar-brand img{
-    width: 100%;
+    width: 88px;
+    height: 33px;
 }
 .navbar .navbar-toggler{
     border: none ;
@@ -11,8 +18,44 @@
 .navbar .navbar-toggler span{
     background-image: url('../assets/icons8-cardápio-30.png');
 }
+.navbar .navbar-collapse .nav-link{
+    color: white;
+    font-size: 35px;
+    text-align: right;
+}
+.navbar .navbar-collapse .nav-link:hover{
+    color: #FFF700;
+}
+.navbar .navbar-collapse .nav-link:active{
+    color: #FFF700;
+}
 
 /*HERO*/
 .hero{
     background-image: linear-gradient(to bottom, #e0005c, #1d0084);
+}
+.hero-texts{
+    text-align: center;
+    color: white;
+}
+.hero-title h3{
+    font-size: 40px;
+}
+.hero-subtitle h5{
+    font-size: 20px;
+}
+.img-hero img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/*CAROUSEL*/
+.carousel-item{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+.carousel-item img{
+    border-radius: 22px;
 }
