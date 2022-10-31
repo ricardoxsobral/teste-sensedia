@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -63,43 +65,36 @@
     <!--HERO-->
     <div class="hero">
       <div class="container">
-        <div class="hero-texts">
-          <div class="hero-title">
-            <h3>Eae, Dev?!<br> Pronto para desenvolver?</h3>
+        <div class="hero-content">
+          <div class="hero-texts">
+            <div class="hero-title">
+              <h3>Eae, Dev?!<br> Pronto para desenvolver?</h3>
+            </div>
+            <div class="hero-subtitle">
+              <h5>Conheça nossa API e<br> fique pronto para codar!</h5>
+            </div>
           </div>
-          <div class="hero-subtitle">
-            <h5>Conheça nossa API e<br> fique pronto para codar!</h5>
+          <div class="img-hero">
+            <img
+              src="./assets/pleasant-looking-female-with-crisp-hair-points-at-cell-phone-device-donwloads-new-modern-application-has-happy-expression-wears-spectacles-for-vision-correction-purple-jumper-and-silk-scarf (1) (1).png"
+              alt="Garota segurando celular"
+            />
           </div>
-        </div>
-        <div class="img-hero">
-          <img
-            src="./assets/pleasant-looking-female-with-crisp-hair-points-at-cell-phone-device-donwloads-new-modern-application-has-happy-expression-wears-spectacles-for-vision-correction-purple-jumper-and-silk-scarf (1) (1).png"
-            alt="Garota segurando celular"
-          />
         </div>
       </div>
     </div>
     <!--CAROUSEL-->
-    <div id="carouselExampleIntervalDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="3000">
-          <img src="./assets/incentivo (2).png" class="" alt="">
+    <div class="carousel">
+      <div class="container">
+        <div class="carousel-title">
+          <h3>Conheças nossas principais <span>APIs</span></h3>
         </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="./assets/conciliacao].png" class="" alt="">
+        <div class="owl-carousel owl-theme">
+          <div class="item"> <img src="assets/conciliacao].png"  alt="..."> </div>
+          <div class="item"> <img src="assets/incentivo (2).png"  alt="..."> </div>
+          <div class="item"> <img src="assets/recorrencia.png"  alt="..."> </div>
         </div>
-        <div class="carousel-item">
-          <img src="./assets/recorrencia.png" class="" alt="" data-bs-interval="5000">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    </div>
     </div>
     <!--CHAMADA-->
     <div class="call">
@@ -136,15 +131,46 @@
           <div class="vantagens-title">
             <h3>Vantagens de utilizar<br> as <span>APIs Ame</span></h3>
           </div>
-          <div class="vantagens-content-text">
-            <div class="vantagens-text">
-              <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. DUIS IN.</p>
-              <span>Saiba Mais</span>
+          <div class="diamond">
+            <div class="row-diamond1">
+              <div class="vantagens-content-text">
+                <div class="vantagens-text">
+                  <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. DUIS IN.</p>
+                  <span>Saiba Mais</span>
+                </div>
+              </div>
+              <div class="vantagens-content-text">
+                <div class="vantagens-text">
+                  <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. DUIS IN.</p>
+                  <span>Saiba Mais</span>
+                </div>
+              </div>
+              <div class="vantagens-content-text">
+                <div class="vantagens-text">
+                  <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. DUIS IN.</p>
+                  <span>Saiba Mais</span>
+                </div>
+              </div>
+            </div>
+            <div class="row-diamond2">
+              <div class="vantagens-content-text">
+                <div class="vantagens-text">
+                  <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. DUIS IN.</p>
+                  <span>Saiba Mais</span>
+                </div>
+              </div>
+              <div class="vantagens-content-text">
+                <div class="vantagens-text">
+                  <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. DUIS IN.</p>
+                  <span>Saiba Mais</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!--FOOTER-->
     <div class="footer">
       <div class="container">
         <div class="footer-content">
@@ -179,5 +205,8 @@
         </div>
       </div>
     </div>
+    <script src="/teste-sensedia/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script src="/teste-sensedia/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
   </body>
 </html>
