@@ -53,13 +53,22 @@ span{
 }
 
 /*CAROUSEL*/
-.carousel-inner{
-    text-align: center;
-    padding: 30px;
+.carousel{
+    padding: 100px 0px;
 }
-.carousel-item img{
+.carousel-title{
+    color: #313647;
+    text-align: center;
+}
+.owl-carousel .owl-item img{
+    width: 50% !important;
     border-radius: 22px;
-    
+}
+.owl-carousel .item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
 }
 /*CALL*/
 .call{
@@ -93,6 +102,12 @@ span{
 .vantagens{
     margin-top: 30px;
 }
+.vantagens .vantagens-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .vantagens .vantagens-content  .vantagens-title{
     color: #313647;
     font-size: 20px;
@@ -108,6 +123,7 @@ span{
     padding: 20px;
     margin: 0 75px;
     margin-top: 50px;
+    margin-bottom: 90px;
 }
 .vantagens .vantagens-content .vantagens-content-text .vantagens-text{
     transform: rotate(-45deg);
@@ -150,5 +166,75 @@ span{
 }
 .footer .footer-content .footer-text .footer-item .img-medias img{
     width: 37px;
+}
+@media (min-width: 768px) { 
+    /*CALL*/
+    .call-text-item p{
+        font-size: 20px;
+    }
+    /*CAROUSEL*/
+    .owl-carousel .item{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px;
+    }
+}
+@media (min-width: 1024px) { 
+    /*NAVBAR*/
+    .navbar-brand img{
+        width: 120px;
+        height: 50px;;
+    }
+    .navbar-collapse{
+        justify-content: flex-end;
+    }
+    /*HERO*/
+    .hero-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hero-texts{
+        text-align: left;
+        width: 70%;
+    }
+    .img-hero {
+        width: 70%;
+    }
+    /*carrousel*/
+    .owl-stage-outer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    /*VANTAGENS*/
+    .diamond{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .row-diamond1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .row-diamond2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    /*FOOTER*/
+    .footer-text{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    .footer .footer-content .footer-text .footer-item .img-medias img {
+        width: 22px;
+    }
 }
 
