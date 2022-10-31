@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+span{
+    color: #ED0059;
+}
+
+/*NAVBAR*/
+.navbar{
+    background: #e0005c;
+}
+.navbar-brand img{
+    width: 88px;
+    height: 33px;
+}
+.navbar .navbar-toggler{
+    border: none ;
+}
+.navbar .navbar-toggler span{
+    background-image: url('../assets/icons8-cardápio-30.png');
+}
+.navbar .navbar-collapse .nav-link{
+    color: white;
+    font-size: 35px;
+    text-align: right;
+}
+.navbar .navbar-collapse .nav-link:hover{
+    color: #FFF700;
+}
+.navbar .navbar-collapse .nav-link:active{
+    color: #FFF700;
+}
+
+/*HERO*/
+.hero{
+    background-image: linear-gradient(to bottom, #e0005c, #1d0084);
+}
+.hero-texts{
+    text-align: center;
+    color: white;
+}
+.hero-title h3{
+    font-size: 40px;
+}
+.hero-subtitle h5{
+    font-size: 20px;
+}
+.img-hero img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/*CAROUSEL*/
+.carousel{
+    padding: 100px 0px;
+}
+.carousel-title{
+    color: #313647;
+    text-align: center;
+}
+.owl-carousel .owl-item img{
+    width: 50% !important;
+    border-radius: 22px;
+}
+.owl-carousel .item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+/*CALL*/
+.call{
+    background-color: #EDEDED;
+    padding: 30px;
+}
+.call .call-content .call-title{
+    color: #313647;
+    font-size: 20px;
+    text-align: center;
+}
+.call .call-content .call-title h3::after{
+    content: '<recompensas/> !';
+    color: #ED0059;
+}
+.call .call-content .call-text {
+    margin-top: 20px;
+}
+.call .call-content .call-text .call-text-item{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+.call .call-content .call-text .call-text-item img{
+    width: 43px;
+    margin-right: 20px;
+}
+
+/*CALL*/
+.vantagens{
+    margin-top: 30px;
+}
+.vantagens .vantagens-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.vantagens .vantagens-content  .vantagens-title{
+    color: #313647;
+    font-size: 20px;
+    text-align: center;
+}
+.vantagens .vantagens-content .vantagens-content-text{
+    width: 200px;
+    height: 200px;
+    background-color: #170085;
+    transform: rotate(45deg);
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 75px;
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+.vantagens .vantagens-content .vantagens-content-text .vantagens-text{
+    transform: rotate(-45deg);
+    color: white;
+}
+.vantagens .vantagens-content .vantagens-content-text .vantagens-text p{
+    font-size: 15px;
+    padding: 5px;
+}
+
+/*FOOTER*/
+.footer{
+    background: #313647;
+    margin-top: 63px;
+}
+.footer .footer-content {
+    text-align: center;
+    padding-top: 30px;
+}
+.footer .footer-content .footer-top {
+    color: white;
+}
+.footer .footer-content .footer-top img{
+    width: 100px;
+}
+.footer .footer-content .footer-text .footer-item{
+    padding: 20px;
+}
+.footer .footer-content .footer-text .footer-item p{
+    color: #BCBCBC;
+}
+.footer .footer-content .footer-text .footer-item h3{
+    color: #FFFFFF;
+}
+.footer .footer-content .footer-text .footer-item .img-medias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.footer .footer-content .footer-text .footer-item .img-medias img{
+    width: 37px;
+}
+@media (min-width: 768px) { 
+    /*CALL*/
+    .call-text-item p{
+        font-size: 20px;
+    }
+    /*CAROUSEL*/
+    .owl-carousel .item{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px;
+    }
+}
+@media (min-width: 1024px) { 
+    /*NAVBAR*/
+    .navbar-brand img{
+        width: 120px;
+        height: 50px;;
+    }
+    .navbar-collapse{
+        justify-content: flex-end;
+    }
+    /*HERO*/
+    .hero-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hero-texts{
+        text-align: left;
+        width: 70%;
+    }
+    .img-hero {
+        width: 70%;
+    }
+    /*carrousel*/
+    .owl-stage-outer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    /*VANTAGENS*/
+    .diamond{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .row-diamond1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .row-diamond2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    /*FOOTER*/
+    .footer-text{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    .footer .footer-content .footer-text .footer-item .img-medias img {
+        width: 22px;
+    }
+}
+
